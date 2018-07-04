@@ -1,0 +1,21 @@
+spring:
+  batch:
+    job:
+      enabled: false
+  application:
+    name: Batch Mise en Abandon EERPM
+  metrics:
+    prometheus:
+      enabled: true
+endpoints:
+  prometheus:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+info:
+  app:
+    name: ${spring.application.name}
+    description: This is my first spring boot application
